@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    var json = [
+        {id:5,name:"天河区",pid:3},
+        {id:6,name:"某一街道",pid:5},
+        {id:1,name:"北京",pid:0},
+        {id:2,name:"上海",pid:0},
+        {id:8,name:"越秀区",pid:3},
+        {id:3,name:"广州",pid:0},
+        {id:9,name:"某二街道",pid:5},
+        {id:4,name:"深圳",pid:0},
+        {id:7,name:"黄埔区",pid:3},
+    ]    
+
+    // 递归
+
+    // 结果：
+    // 结果一：
+    // var json = [
+    //     {id:1,name:"北京",pid:0},
+    //     {id:2,name:"上海",pid:0},
+    //     {
+    //         id:3,
+    //         name:"广州",
+    //         pid:0,
+    //         arr:[
+    //             {
+    //                 id:5,
+    //                 name:"天河区",
+    //                 pid:3,
+    //                 arr:[
+    //                     {id:6,name:"某一街道",pid:5},
+    //                     {id:9,name:"某二街道",pid:5},
+    //                 ]
+    //             },
+    //             {id:7,name:"黄埔区",pid:3},
+    //             {id:8,name:"越秀区",pid:3},
+    //         ]
+    //     },
+    //     {id:4,name:"深圳",pid:0},
+    // ]    
+        
+
+    // 结果二：
+    // var json = [
+    //     {id:1,name:"北京",pid:0},
+    //     {id:2,name:"上海",pid:0},
+    //     {id:3,name:"广州",pid:0},
+    //     {id:5,name:"天河区",pid:3},
+    //     {id:6,name:"某一街道",pid:5},
+    //     {id:9,name:"某二街道",pid:5},
+    //     {id:7,name:"黄埔区",pid:3},
+    //     {id:8,name:"越秀区",pid:3},
+    //     {id:4,name:"深圳",pid:0},
+    // ]    
+
+    // 正则：
+    // "My name is::zhangsan.My age is:12."
+    // // 最终答案，需要写逻辑
+    // {
+    //     name:zhangsan,
+    //     age:12
+    // }
+
+
+    // 明天：面试题
+    </script>
+</body>
+</html>
